@@ -5,12 +5,11 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:path_provider/path_provider.dart';
 import 'package:pdf_viewer_plugin/pdf_viewer_plugin.dart';
+import 'package:sample_flutter_app/main_screen.dart';
+
 import 'package:screen_capture_event/screen_capture_event.dart';
-import 'package:test/main_screen.dart';
 
 class PdfTest extends StatefulWidget {
-  const PdfTest({super.key});
-
   @override
   _MyAppState createState() => _MyAppState();
 }

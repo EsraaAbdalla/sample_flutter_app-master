@@ -33,6 +33,8 @@ dependencies:
   screen_capture_event: ^1.1.1
   presentation_displays: ^1.0.0
   pdf: ^3.10.7
+  path_provider: ^2.1.1
+  pdf_viewer_plugin: ^2.0.1
 
 dev_dependencies:
   flutter_lints: ^2.0.1

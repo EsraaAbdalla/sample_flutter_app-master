@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:sample_flutter_app/pdf.dart';
 import 'package:sample_flutter_app/samples.dart';
 import 'package:sample_flutter_app/views/vdo_download_view.dart';
 import 'package:sample_flutter_app/views/vdoplayback_view.dart';
@@ -98,6 +99,20 @@ class MyHomeState extends State<MyHome> {
                     style: TextStyle(fontSize: 24, fontWeight: FontWeight.w500),
                   ),
                 ),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => PdfTest()),
+                  );
+                },
+                child: Padding(
+                  padding: const EdgeInsets.only(
+                      left: 32.0, right: 32.0, top: 12, bottom: 12),
+                  child: Text('Test Pdf'.toUpperCase(),
+                      style: const TextStyle(fontSize: 16)),
+                ),
+              ),
               if (!kIsWeb)
                 ElevatedButton(
                   onPressed: _goToVdoDownloadView,
